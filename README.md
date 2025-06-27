@@ -398,7 +398,7 @@ printf("[+] Starting search for VMK\n");
         getchar(); // Ожидаем нажатия клавиши Enter
     }
 ```
-![Куда вставлять?](iamge/end_of_PoC.png)
+![Куда вставлять?](images/end_of_PoC.png)
 
 Скомплиируем наш exploit
 теперь прейдём в папку с exploit и скомпилируем бинарный файл
@@ -452,7 +452,7 @@ cp -r root/CVE-2024-1086/* $ROOTDIR/root/CVE-2024-1086/
 # Генерируем зависимости для модулей ядра
 chroot $ROOTDIR depmod -a 5.14.0-1-amd64
 ```
-![](image/end_of_build.sh.png)
+![](images/end_of_build.sh.png)
 Для работы alpine нужен docker установим его
 ```
 sudo pacman -S docker
